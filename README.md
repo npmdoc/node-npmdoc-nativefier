@@ -1,11 +1,13 @@
-# api documentation for  [nativefier (v7.0.1)](https://github.com/jiahaog/nativefier#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-nativefier.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nativefier) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nativefier.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nativefier)
+# api documentation for  [nativefier (v7.1.0)](https://github.com/jiahaog/nativefier#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-nativefier.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nativefier) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nativefier.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nativefier)
 #### Wrap web apps natively
 
-[![NPM](https://nodei.co/npm/nativefier.png?downloads=true)](https://www.npmjs.com/package/nativefier)
+[![NPM](https://nodei.co/npm/nativefier.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/nativefier)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-nativefier/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-nativefier_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-nativefier/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-nativefier/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-nativefier/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-nativefier/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-nativefier/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-nativefier/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -72,10 +74,10 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "cd54006becc1839bf8de3f359ee61d2fa79969df",
-        "tarball": "https://registry.npmjs.org/nativefier/-/nativefier-7.0.1.tgz"
+        "shasum": "8bc6d62cc3e900177b165c0d58ea6935e02f79c6",
+        "tarball": "https://registry.npmjs.org/nativefier/-/nativefier-7.1.0.tgz"
     },
-    "gitHead": "707cc8b730d0fd7d7ce6dde4aae3de3f731ae04a",
+    "gitHead": "a540326237ca884f10c34c5f0c9bea1010b02a97",
     "homepage": "https://github.com/jiahaog/nativefier#readme",
     "keywords": [
         "desktop",
@@ -88,17 +90,14 @@
     "main": "lib/index.js",
     "maintainers": [
         {
-            "name": "jiahaog",
-            "email": "jiahaog@gmail.com"
+            "name": "jiahaog"
         },
         {
-            "name": "skewedlines",
-            "email": "jiahaog@gmail.com"
+            "name": "skewedlines"
         }
     ],
     "name": "nativefier",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jiahaog/nativefier.git"
@@ -115,7 +114,7 @@
         "test": "gulp test",
         "watch": "while true ; do gulp watch ; done"
     },
-    "version": "7.0.1"
+    "version": "7.1.0"
 }
 ```
 
