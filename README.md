@@ -3,7 +3,9 @@
 
 [![NPM](https://nodei.co/npm/nativefier.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/nativefier)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-nativefier/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-nativefier/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-nativefier/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-nativefier/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-nativefier/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-nativefier/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-nativefier/build/screenCapture.npmPackageListing.svg)
 
@@ -116,88 +118,6 @@
     },
     "version": "7.1.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module nativefier](#apidoc.module.nativefier)
-1.  [function <span class="apidocSignatureSpan">nativefier.</span>default (options, callback)](#apidoc.element.nativefier.default)
-
-
-
-# <a name="apidoc.module.nativefier"></a>[module nativefier](#apidoc.module.nativefier)
-
-#### <a name="apidoc.element.nativefier.default"></a>[function <span class="apidocSignatureSpan">nativefier.</span>default (options, callback)](#apidoc.element.nativefier.default)
-- description and source-code
-```javascript
-function buildMain(options, callback) {
-    // pre process app
-
-    var tmpObj = _tmp2.default.dirSync({ unsafeCleanup: true });
-    var tmpPath = tmpObj.name;
-
-    // todo check if this is still needed on later version of packager
-    var packagerConsole = new _packagerConsole2.default();
-
-    var progress = new _dishonestProgress2.default(5);
-
-    _async2.default.waterfall([function (callback) {
-        progress.tick('inferring');
-        (0, _optionsMain2.default)(options, callback);
-    }, function (options, callback) {
-        progress.tick('copying');
-        (0, _buildApp2.default)(options.dir, tmpPath, options, function (error) {
-            if (error) {
-                callback(error);
-                return;
-            }
-            // dir now correctly references the app folder to package
-            options.dir = tmpPath;
-            callback(null, options);
-        });
-    }, function (options, callback) {
-        progress.tick('icons');
-        (0, _iconBuild2.default)(options, function (error, optionsWithIcon) {
-            callback(null, optionsWithIcon);
-        });
-    }, function (options, callback) {
-        progress.tick('packaging');
-        // maybe skip passing icon parameter to electron packager
-        var packageOptions = maybeNoIconOption(options);
-
-        packagerConsole.override();
-
-        (0, _electronPackager2.default)(packageOptions, function (error, appPathArray) {
-
-            // restore console.error
-            packagerConsole.restore();
-
-            // pass options which still contains the icon to waterfall
-            callback(error, options, appPathArray);
-        });
-    }, function (options, appPathArray, callback) {
-        progress.tick('finalizing');
-        // somehow appPathArray is a 1 element array
-        var appPath = getAppPath(appPathArray);
-        if (!appPath) {
-            callback();
-            return;
-        }
-
-        maybeCopyIcons(options, appPath, function (error) {
-            callback(error, appPath);
-        });
-    }], function (error, appPath) {
-        packagerConsole.playback();
-        callback(error, appPath);
-    });
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
