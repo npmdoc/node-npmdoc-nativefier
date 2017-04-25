@@ -1,4 +1,7 @@
-# api documentation for  [nativefier (v7.1.0)](https://github.com/jiahaog/nativefier#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-nativefier.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nativefier) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nativefier.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nativefier)
+# npmdoc-nativefier
+
+#### basic api documentation for  [nativefier (v7.2.0)](https://github.com/jiahaog/nativefier#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-nativefier.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nativefier) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nativefier.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nativefier)
+
 #### Wrap web apps natively
 
 [![NPM](https://nodei.co/npm/nativefier.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/nativefier)
@@ -31,29 +34,28 @@
         "url": "https://github.com/jiahaog/nativefier/issues"
     },
     "dependencies": {
-        "async": "^1.5.2",
-        "axios": "^0.11.1",
+        "async": "^2.3.0",
+        "axios": "^0.16.1",
         "babel-polyfill": "^6.7.2",
-        "cheerio": "^0.20.0",
+        "cheerio": "^0.22.0",
         "commander": "^2.9.0",
-        "electron-packager": "^7.0.1",
+        "electron-packager": "^8.6.0",
         "gitcloud": "^0.1.0",
         "hasbin": "^1.2.0",
         "lodash": "^4.0.0",
         "loglevel": "^1.4.0",
         "ncp": "^2.0.0",
         "page-icon": "^0.3.0",
-        "progress": "^1.1.8",
+        "progress": "^2.0.0",
         "request": "^2.67.0",
         "sanitize-filename": "^1.5.3",
         "shelljs": "^0.7.0",
         "source-map-support": "^0.4.0",
-        "tmp": "0.0.28",
-        "validator": "^5.2.0"
+        "tmp": "0.0.31",
+        "validator": "^7.0.0"
     },
     "description": "Wrap web apps natively",
     "devDependencies": {
-        "async": "^1.5.2",
         "babel-core": "^6.4.5",
         "babel-loader": "^6.2.1",
         "babel-preset-es2015": "^6.6.0",
@@ -64,22 +66,22 @@
         "eslint-config-google": "^0.5.0",
         "gulp": "^3.9.0",
         "gulp-babel": "^6.1.1",
-        "gulp-istanbul": "^0.10.3",
-        "gulp-mocha": "^2.2.0",
-        "gulp-sourcemaps": "^1.6.0",
-        "lodash": "^4.0.0",
+        "gulp-istanbul": "^1.1.1",
+        "gulp-mocha": "^4.3.0",
+        "gulp-sourcemaps": "^2.6.0",
         "require-dir": "^0.3.0",
         "run-sequence": "^1.1.5",
-        "shelljs": "^0.7.0",
-        "tmp": "0.0.28",
         "webpack-stream": "^3.1.0"
     },
     "directories": {},
     "dist": {
-        "shasum": "8bc6d62cc3e900177b165c0d58ea6935e02f79c6",
-        "tarball": "https://registry.npmjs.org/nativefier/-/nativefier-7.1.0.tgz"
+        "shasum": "e6bc05d44f74534e6db4dac75c65cea2648b317e",
+        "tarball": "https://registry.npmjs.org/nativefier/-/nativefier-7.2.0.tgz"
     },
-    "gitHead": "a540326237ca884f10c34c5f0c9bea1010b02a97",
+    "engines": {
+        "node": ">= 4.0"
+    },
+    "gitHead": "34f91c0a20ea62065bdf930ee824eb4b42f2f45a",
     "homepage": "https://github.com/jiahaog/nativefier#readme",
     "keywords": [
         "desktop",
@@ -116,7 +118,7 @@
         "test": "gulp test",
         "watch": "while true ; do gulp watch ; done"
     },
-    "version": "7.1.0"
+    "version": "7.2.0"
 }
 ```
 
